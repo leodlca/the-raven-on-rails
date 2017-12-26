@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Raven on Rails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+
+  <%= nav_bar brand: "The Raven", brand_link: root_url do %>
+    <%= form_tag search_post_path, method: :get, class: "navbar-form navbar-right" do %>
+      <div class="form-group">
+        <%= text_field_tag :text, nil, class: "form-control" %>
+        <%= button_to "Buscar", nil, class: "btn btn-default" %>
+      </div>
+    <% end %>
+  <% end %>
+
+  <body>
+
+    <div class="container">
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+
+</html>
