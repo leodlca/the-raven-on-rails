@@ -1,5 +1,9 @@
 # README
 
+This is a (very) simple project that I've done to practice my skills during the Ruby on Rails Alura's path.
+
+******************************
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -22,3 +26,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
